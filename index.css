@@ -146,11 +146,15 @@ img {
 /* Кнопка-бургер (десктоп — скрыта) */
 .nav-toggle {
   display: none;
-  background: none;
+  background: transparent;
   border: none;
-  padding: 8px;
+  padding: 0;
   margin-left: 24px;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.6px;  
 }
 
 .nav-toggle__line {
@@ -650,7 +654,7 @@ img {
 
   /* показать бургер на мобилках */
   .nav-toggle {
-    display: block;
+    display: flex;
   }
 
   /* прячем десктопное меню по умолчанию */
@@ -679,7 +683,7 @@ img {
 
   /* когда открыто */
   .nav.nav--open {
-    display: flex;
+    display: block;
   }
 
   .nav__list {
@@ -787,7 +791,7 @@ img {
   }
 
   .form__btn {
-    width: 108%;
+    width: 110%;
     margin-right: 0;
     margin-top: 20px;
     padding: 14px 18px;
