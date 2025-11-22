@@ -628,8 +628,18 @@ img {
 
   .contact__inner {
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     gap: 32px;
+  }
+  .contact__info {
+    max-width: 520px;
+    text-align: left;
+  }
+
+  .contact__form-wrapper {
+    flex: 0 1 auto;
+    width: 100%;
+    max-width: 640px;         /* ширина самой карточки формы */
   }
 
   .contact__info,
@@ -782,8 +792,9 @@ img {
   }
 
   .form__btn {
-    width: 110%;
+    width: 100%;
     margin-right: 0;
+    margin-left: 14px;
     margin-top: 20px;
     padding: 14px 18px;
   }
