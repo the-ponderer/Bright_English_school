@@ -647,10 +647,9 @@ img {
     .site-header__inner {
     justify-content: space-between;
   }
-
-  /* показать бургер на мобилках */
-  .nav-toggle {
-    display: flex;
+    /* чтобы не скроллилось подложенное содержимое, когда меню открыто */
+  body.menu-open {
+    overflow: hidden;
   }
 
   /* прячем десктопное меню по умолчанию */
@@ -680,10 +679,6 @@ img {
   /* когда открыто */
   .nav.nav--open {
     display: block;
-  }
-
-  .nav__list {
-    display: none; /* навигацию спрячем, будет только бургер */
   }
 
   .nav-toggle {
