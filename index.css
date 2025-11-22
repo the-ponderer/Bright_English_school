@@ -144,26 +144,22 @@ img {
 /* бургер, пока только декоративно */
 
 /* Кнопка-бургер (десктоп — скрыта) */
+/* Кнопка-бургер: по умолчанию скрыта (десктоп) */
 .nav-toggle {
   display: none;
-  background: transparent;
   border: none;
+  background: transparent;
   padding: 0;
-  margin-left: 24px;
   cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.6px;  
 }
 
+/* Полоски */
 .nav-toggle__line {
   display: block;
   width: 24px;
   height: 2px;
+  background-color: #111827; /* почти чёрный */
   border-radius: 999px;
-  background-color: #111827;
-  transition: transform 0.2s ease, opacity 0.2s ease, background-color 0.2s ease;
 }
 
 /* Немного расстояния между полосками */
@@ -691,7 +687,10 @@ img {
   }
 
   .nav-toggle {
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+      
   }
   .hero__title {
     font-size: 1.9rem;
