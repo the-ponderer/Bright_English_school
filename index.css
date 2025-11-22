@@ -759,9 +759,6 @@ img {
     padding: 50px 0 70px;
   }
 
-
-
-
   /* чтобы форма не была шире экрана */
   .contact__inner {
     flex-direction: column;
@@ -785,7 +782,7 @@ img {
   }
 
   .form__btn {
-    width: 110%;
+    width: 108%;
     margin-right: 0;
     margin-top: 20px;
     padding: 14px 18px;
