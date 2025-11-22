@@ -780,22 +780,19 @@ img {
   }
 
   .form {
-    padding: 24px 20px 28px; /* симметричные отступы справа/слева */
+  padding-top: 30px;
+  padding-right: 70px;
+  padding-left: 30;
+  padding-bottom: 40px;
   }
 
   .form__btn {
-    width: 100%;
+    width: 108%;
     margin-right: 0;
     margin-top: 20px;
     padding: 14px 18px;
   }
 
-  
-
-  .form {
-    padding: 24px 20px 22px;
-    border-radius: 22px;
-  }
 
   .form__input {
     border-radius: 14px;
