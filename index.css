@@ -761,6 +761,37 @@ img {
     padding: 50px 0 70px;
   }
 
+
+
+
+  /* чтобы форма не была шире экрана */
+  .contact__inner {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .contact__info {
+    max-width: 100%;
+  }
+
+  .contact__form-wrapper {
+    flex: 1 1 auto;
+    max-width: 100%;
+  }
+
+  .form {
+    padding: 24px 20px 28px; /* симметричные отступы справа/слева */
+  }
+
+  .form__btn {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 20px;
+    padding: 14px 18px;
+  }
+
+  
+
   .form {
     padding: 24px 20px 22px;
     border-radius: 22px;
