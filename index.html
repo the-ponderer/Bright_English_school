@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright English School</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Ссылка для скринридеров: перейти сразу к контенту -->
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <!-- HEADER -->
+  <header class="site-header" id="header" role="banner">
+    <div class="container site-header__inner">
+      <!-- Логотип / название школы -->
+      <a class="logo" href="/">Bright English School</a>
+
+      <!-- Основная навигация -->
+      <nav class="nav" aria-label="Главная навигация">
+        <ul class="nav__list">
+          <li><a href="#benefits">Почему мы</a></li>
+          <li><a href="#levels">Уровни курсов</a></li>
+          <li><a href="#method">Методика</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#contact" class="btn btn--sm">Записаться</a></li>
+        </ul>
+      </nav>
+
+      <!-- Кнопка-бургер на будущее (пока без JS, просто разметка) -->
+        <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span class="nav-toggle__line"></span>
+        <span class="nav-toggle__line"></span>
+        <span class="nav-toggle__line"></span>
+        </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <h1 id="hero-title" class="hero__title">
+            Открой английский вместе с Bright English School
+          </h1>
+
+          <p class="hero__subtitle">
+            Живые уроки с преподавателями, современная программа и атмосферой поддержки — 
+            от первых фраз до уверенного общения.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary">Записаться на пробный урок</a>
+            <a href="#levels" class="btn btn--ghost">Смотреть уровни</a>
+          </div>
+
+          <!-- Небольшие "бейджи"-факты как в макете -->
+          <ul class="hero__highlights">
+            <li>Группы до 8 человек</li>
+            <li>Детские и взрослые программы</li>
+            <li>Онлайн и офлайн форматы</li>
+          </ul>
+        </div>
+
+        <!-- Блок под картинку / иллюстрацию класса -->
+        <div class="hero__media">
+          <!-- Потом заменишь на реальную картинку из папки images -->
+          <img src="images/img1.jpg" alt="Урок английского в Bright English School" class="hero__image">
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="section benefits" id="benefits" aria-labelledby="benefits-title">
+      <div class="container">
+        <h2 id="benefits-title" class="section__title">
+          Почему выбирают Bright English School
+        </h2>
+
+        <ul class="cards benefits__list">
+          <li class="card benefits__card">
+            <h3 class="card__title">Опытные преподаватели</h3>
+            <p class="card__text">
+              Сертифицированные учителя с реальной практикой преподавания и живым английским.
+            </p>
+          </li>
+          <li class="card benefits__card">
+            <h3 class="card__title">Небольшие группы</h3>
+            <p class="card__text">
+              Максимум внимания каждому студенту и комфортная атмосфера на уроках.
+            </p>
+          </li>
+          <li class="card benefits__card">
+            <h3 class="card__title">Современные материалы</h3>
+            <p class="card__text">
+              Интерактивные пособия, платформы и реальные ситуации вместо скучной грамматики.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- LEVELS -->
+    <section class="section levels" id="levels" aria-labelledby="levels-title">
+      <div class="container">
+        <h2 id="levels-title" class="section__title">
+          Уровни и форматы обучения
+        </h2>
+
+        <ul class="cards levels__grid">
+          <li class="card levels__card">
+            <h3 class="card__title">Kids (6–10 лет)</h3>
+            <p class="card__text">
+              Игровые занятия, песни и активности, чтобы ребёнок полюбил английский с первых уроков.
+            </p>
+          </li>
+          <li class="card levels__card">
+            <h3 class="card__title">Teens (11–16 лет)</h3>
+            <p class="card__text">
+              Подготовка к школе и экзаменам, разговорная практика, проекты и дискуссии.
+            </p>
+          </li>
+          <li class="card levels__card">
+            <h3 class="card__title">Adults</h3>
+            <p class="card__text">
+              Общий и разговорный английский, путешествия, работа и собеседования.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- METHOD / ABOUT -->
+    <section class="section method" id="method" aria-labelledby="method-title">
+      <div class="container method__inner">
+        <div class="method__text">
+          <h2 id="method-title" class="section__title">
+            Наша методика и подход
+          </h2>
+          <p class="method__paragraph">
+            Мы совмещаем коммуникативный подход с понятным разбором грамматики.
+            На занятиях студенты говорят по-английски с первого урока и много практикуются в парах и группах.
+          </p>
+          <p class="method__paragraph">
+            Уроки проходят в тёплой, поддерживающей атмосфере: мы поощряем вопросы, ошибки считаем частью
+            процесса и даём понятную обратную связь после каждого модуля.
+          </p>
+        </div>
+
+        <div class="method__extras">
+          <ul class="method__list">
+            <li class="method__item">Чёткие учебные планы и уровни от A1 до C1</li>
+            <li class="method__item">Домашние задания с проверкой и рекомендациями</li>
+            <li class="method__item">Online-платформа с материалами и записью уроков (при необходимости)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section reviews" id="reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <h2 id="reviews-title" class="section__title">
+          Отзывы наших студентов
+        </h2>
+
+        <ul class="cards reviews__list">
+          <li class="card reviews__card">
+            <p class="reviews__text">
+              «Через три месяца я перестала бояться говорить с коллегами из других стран. Уроки всегда живые и интересные.»
+            </p>
+            <p class="reviews__author">— Анна, курс Adults</p>
+          </li>
+          <li class="card reviews__card">
+            <p class="reviews__text">
+              «Ребёнок сам напоминает про занятия и показывает новые слова. Мне очень нравится атмосфера и подход учителя.»
+            </p>
+            <p class="reviews__author">— Ольга, мама ученика Kids</p>
+          </li>
+          <li class="card reviews__card">
+            <p class="reviews__text">
+              «Готовилась к экзамену B2, подтянула грамматику и научилась писать письма. Сдала с результатом выше, чем планировала!»
+            </p>
+            <p class="reviews__author">— Дмитрий, уровень B2</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div class="container contact__inner">
+
+            <div class="contact__info">
+            <h2 id="contact-title" class="section__title">Свяжитесь с нами</h2>
+            <p class="contact__text">
+                Оставьте свои контакты — мы перезвоним, поможем выбрать программу и ответим на вопросы.
+            </p>
+
+            <ul class="contact__details">
+                <li>Телефон: <a href="tel:+79990000000">+7 (999) 000-00-00</a></li>
+                <li>Email: <a href="mailto:info@bright-english.school">info@bright-english.school</a></li>
+                <li>Адрес: Москва, ул. Примерная, 10 (или онлайн по всему миру)</li>
+            </ul>
+            </div>
+
+            <div class="contact__form-wrapper">
+            <!-- Форма без реальной обработки, просто разметка -->
+                <form class="form" action="#" method="post">
+                    <div class="form__row">
+                    <label class="form__label" for="name">Имя</label>
+                    <input
+                        class="form__input"
+                        type="text"
+                        id="name"
+                        name="name"
+                        autocomplete="name"
+                    />
+                    </div>
+
+                    <div class="form__row">
+                    <label class="form__label" for="email">Email</label>
+                    <input
+                        class="form__input"
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                    />
+                    </div>
+
+                    <div class="form__row">
+                    <label class="form__label" for="message">Сообщение</label>
+                    <textarea
+                        class="form__input form__textarea"
+                        id="message"
+                        name="message"
+                        rows="4"
+                    ></textarea>
+                    </div>
+
+                    <button class="btn btn--primary form__btn" type="submit">
+                    Отправить
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container site-footer__inner">
+      <p class="site-footer__copy">© Bright English School, 2025</p>
+      <p class="site-footer__small">
+        Сделано в учебных целях.
+      </p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
