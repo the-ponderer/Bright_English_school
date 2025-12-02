@@ -138,10 +138,34 @@ img {
 }
 
 .nav .btn:hover {
-  background: var(--accent-strong);
+  background: var(--accent);
 }
 
-/* бургер, пока только декоративно */
+/*   кнопки на другие страницы  */
+.btn-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2563eb;
+  text-decoration: none;
+
+  margin-top: 16px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-link::after {
+  content: "→";
+  font-size: 0.9em;
+}
+
+.btn-link:hover {
+  color: #1d4ed8;
+  transform: translateX(2px);
+}
+
 
 /* Кнопка-бургер (десктоп — скрыта) */
 /* Кнопка-бургер: по умолчанию скрыта (десктоп) */
@@ -395,11 +419,7 @@ img {
   box-shadow: 0 0 0 4px rgba(250, 204, 21, 0.18);
 }
 
-/* === REVIEWS 
-
-.reviews {
-  /* базовые отступы уже даёт .section, можно ничего не трогать /
-}                   === */
+/* === REVIEWS === */
 
 .reviews__list {
   margin-top: 40px;
@@ -474,6 +494,7 @@ img {
 .contact__details a:hover {
   border-bottom-color: rgba(17, 24, 39, 0.5);
 }
+
 
 /* карточка формы */
 
@@ -568,9 +589,197 @@ img {
   color: #6b7280;
 }
 
+/* ===== О школе ===== */
+
+.about {
+  padding: 100px 0 120px;
+}
+
+.about__wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about__text {
+  font-size: 1.15rem;
+  line-height: 1.65;
+  color: #444;
+}
+
+.about__btn {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+.about h1.section__title {
+  margin-bottom: 40px;
+}
+.about__inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* ===== Контакты ===== */
+.contacts {
+    padding-top: 25px; /* или 80px — как визуально нравится */
+}
+
+.contacts__grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.contacts__info p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.contacts__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts__list li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.contacts__list a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.contacts__list a:hover {
+  text-decoration: underline;
+}
+
+/* карточка формы */
+.contacts__form-card {
+  background: #ffffff;
+  padding: 40px 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+}
+
+.courses-page {
+    padding: 60px 0;
+}
+
+.courses-page__intro {
+    max-width: 600px;
+    margin-bottom: 40px;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.courses-page__card {
+  margin-bottom: 25px;
+}
+
+.courses-page__list {
+    gap: 32px;
+}
+
+.courses-page__card .btn {
+    margin-top: 16px;
+}
+
+/* Воздух в абзацах курса */
+.course p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.course__subtitle {
+  margin-bottom: 25px;
+}
+
+/* Список преимуществ */
+.course__bullets {
+  margin: 24px 0;
+  padding-left: 20px;
+  line-height: 1.55;
+}
+
+.course__bullets li + li {
+  margin-top: 10px;
+}
+
+.course__summary {
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 20px 55px rgba(0,0,0,0.06);
+  padding: 28px 32px;
+}
+
+.course__row {
+  margin-bottom: 14px;
+}
+
+.course__row dt {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.course__row dd {
+  margin: 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+.section.course {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.section.course-program {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.section.course-cta {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.course__layout {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+
+.course-program__list {
+  margin-top: 20px;
+  padding-left: 20px;
+  line-height: 1.55;
+}
+
+.course-program__list li {
+  margin-bottom: 14px;
+}
+
+.course-cta p {
+  margin-bottom: 14px;
+  line-height: 1.55;
+}
 
 
 @media (max-width: 900px) {
+  .course__layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
   .hero {
     padding: 60px 0 70px;
   }
@@ -814,5 +1023,10 @@ img {
     flex-direction: column;
     text-align: center;
     gap: 8px;
+  }
+
+  .contacts__grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 }
