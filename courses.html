@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright English School</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header" id="header" role="banner">
+    <div class="container site-header__inner">
+      <a class="logo" href="/">Bright English School</a>
+
+      <nav class="nav" aria-label="Главная навигация">
+        <ul class="nav__list">
+          <li><a href="about.html">Почему мы</a></li>
+          <li><a href="index.html">Главная</a></li>
+
+          <li><a href="contacts.html" class="btn btn--sm">Записаться</a></li>
+        </ul>
+      </nav>
+
+        <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span class="nav-toggle__line"></span>
+        <span class="nav-toggle__line"></span>
+        <span class="nav-toggle__line"></span>
+        </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="courses-page" id="courses-page">
+    <div class="container">
+        <h2 class="section__title">Все курсы</h2>
+
+        <p class="courses-page__intro">
+            Выберите подходящую программу обучения: для детей, подростков или взрослых.
+        </p>
+
+        <ul class="cards courses-page__list">
+
+            <li class="card courses-page__card">
+                <h3 class="card__title">Kids (6–10 лет)</h3>
+                <p class="card__text">
+                        Программа для младших школьников, где обучение построено в игровой форме:
+                        песни, мини-диалоги, раскраски, карточки и интерактивные задания.  
+                        Дети быстро запоминают слова и фразы, развивают правильное произношение 
+                        и не боятся говорить на английском.
+                </p>
+                <a href="course_kids.html" class="btn btn--secondary">Подробнее →</a>
+            </li>
+
+            <li class="card courses-page__card">
+                <h3 class="card__title">Teens (11–16 лет)</h3>
+                <p class="card__text">
+                    Курс для подростков, который помогает уверенно говорить на английском 
+                    через реальные ситуации: обсуждение фильмов, музыки, новостей и проектов.  
+                    В программу включена подготовка к экзаменам, развитие письменной речи 
+                    и прокачка разговорных навыков.
+                </p>
+                <a href="course_teens.html" class="btn btn--secondary">Подробнее →</a>
+            </li>
+
+            <li class="card courses-page__card">
+                <h3 class="card__title">Adults</h3>
+                <p class="card__text">
+                        Практический английский для жизни: путешествия, работа, собеседования, 
+                        переписка и общение с носителями.  
+                        Курс подходит для начинающих и продолжающих — помогаем свободно 
+                        говорить без стеснения и использовать английский каждый день.
+                </p>
+                <a href="course_adults.html" class="btn btn--secondary">Подробнее →</a>
+            </li>
+
+        </ul>
+    </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container site-footer__inner">
+      <p class="site-footer__copy">© Bright English School, 2025</p>
+      <p class="site-footer__small">
+        Сделано в учебных целях.
+      </p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

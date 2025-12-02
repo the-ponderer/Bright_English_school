@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright English School</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header" id="header" role="banner">
+    <div class="container site-header__inner">
+      <a class="logo" href="/">Bright English School</a>
+
+      <nav class="nav" aria-label="Главная навигация">
+        <ul class="nav__list">
+        <ul class="nav__list">
+          <li><a href="about.html">Почему мы</a></li>
+          <li><a href="courses.html">Курсы</a></li>
+          <li><a href="index.html">Главная</a></li>
+
+          <li><a href="contacts.html" class="btn btn--sm">Записаться</a></li>
+        </ul>
+        </ul>
+      </nav>
+
+        <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span class="nav-toggle__line"></span>
+        <span class="nav-toggle__line"></span>
+        <span class="nav-toggle__line"></span>
+        </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="contacts" id="contacts">
+        <section class="section contacts" id="contacts" aria-labelledby="contacts-title">
+            <div class="container">
+            <h2 id="contacts-title" class="section__title">Контакты</h2>
+
+            <div class="contacts__grid">
+                <!-- Левая колонка -->
+                <div class="contacts__info">
+                <p>
+                    Оставьте свои контакты — мы свяжемся с вами, поможем выбрать программу
+                    и ответим на любые вопросы об обучении в Bright English School.
+                </p>
+
+                <ul class="contacts__list">
+                    <li><strong>Телефон:</strong> <a href="tel:+79990000000">+7 (999) 000-00-00</a></li>
+                    <li><strong>Email:</strong> <a href="mailto:info@bright-english.school">info@bright-english.school</a></li>
+                    <li><strong>Адрес:</strong> Москва, ул. Примерная, 10 (или онлайн — из любой точки мира)</li>
+                </ul>
+                </div>
+
+                <!-- Правая колонка: форма -->
+                <div class="contacts__form-card">
+                <form class="form" action="#" method="post">
+                    <div class="form__row">
+                    <label class="form__label" for="name">Имя</label>
+                    <input class="form__input" id="name" type="text" placeholder="Как к вам обращаться?" />
+                    </div>
+
+                    <div class="form__row">
+                    <label class="form__label" for="email">Email</label>
+                    <input class="form__input" id="email" type="email" placeholder="name@example.com" />
+                    </div>
+
+                    <div class="form__row">
+                    <label class="form__label" for="message">Сообщение</label>
+                    <textarea class="form__input form__textarea" id="message" rows="4"
+                        placeholder="Расскажите, чем мы можем помочь"></textarea>
+                    </div>
+
+                    <button class="btn btn--primary form__btn" type="submit">Отправить</button>
+                </form>
+                </div>
+            </div>
+            </div>
+        </section>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container site-footer__inner">
+      <p class="site-footer__copy">© Bright English School, 2025</p>
+      <p class="site-footer__small">
+        Сделано в учебных целях.
+      </p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
